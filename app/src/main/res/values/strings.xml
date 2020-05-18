@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">HealthRecord</string>
+    <string name="signout">Signout</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="medical_records">Medical Records</string>
+    <string name="leave_application">Leave Application</string>
+    <string name="labs">Labs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

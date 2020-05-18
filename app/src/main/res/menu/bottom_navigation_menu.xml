@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pInfo"
+        android:enabled="true"
+        android:title="@string/personal_info"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/medRecord"
+        android:enabled="true"
+        android:title="@string/medical_records"
+        app:showAsAction="ifRoom"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/leaveApp"
+        android:enabled="true"
+        android:title="@string/leave_application"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/labs"
+        android:enabled="true"
+        android:title="@string/labs"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+</menu>
