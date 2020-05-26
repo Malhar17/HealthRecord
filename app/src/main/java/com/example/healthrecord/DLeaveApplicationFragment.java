@@ -7,12 +7,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
-public class Labs extends Fragment {
+public class DLeaveApplicationFragment extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_labs, container, false);
+        View view = inflater.inflate(R.layout.fragment_leave_application, container, false);
+        ImageView add = view.findViewById(R.id.leaveApp_add);
+        add.setVisibility(View.INVISIBLE);
+        return view;
     }
 }

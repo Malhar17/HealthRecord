@@ -6,6 +6,38 @@
     <string name="leave_application">Leave Application</string>
     <string name="labs">Labs</string>
 
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="add_your_details">Add your details</string>
+    <string name="last_name">Last Name</string>
+    <string name="address">Address</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="name">Name: </string>
+    <string name="userType">UserType</string>
+    <string name="pref">pref</string>
+    <string name="enter_patient_email">Enter patient email</string>
+    <string name="enter_disease">Enter disease</string>
+    <string name="symtoms">Symtoms</string>
+    <string name="add_symptoms">Add Symptoms</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="medicine">Medicine</string>
+    <string name="add_test_details">Add Test Details</string>
+    <string name="result">Result</string>
+    <string name="test_name">Test Name</string>
+    <string name="positive">+ve</string>
+    <string name="negative">-ve</string>
+    <string name="add_leave_details">Add Leave details</string>
+    <string name="enter_doctor_email">Enter Doctor email</string>
+    <string name="enter_faculty_email">Enter Faculty Email</string>
+    <string name="enter_start_date">Enter Start Date</string>
+    <string name="enter_end_date">Enter end date</string>
 </resources>

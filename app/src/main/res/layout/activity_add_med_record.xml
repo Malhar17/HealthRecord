@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedRecord">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="50dp"
+        android:hint="@string/enter_patient_email"
+        android:layout_marginTop="20dp"
+        android:id="@+id/amr_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:layout_marginHorizontal="50dp"
+        android:hint="@string/enter_disease"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/amr_email"
+        android:id="@+id/amr_disease"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:layout_marginHorizontal="50dp"
+        android:hint="@string/add_symptoms"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/amr_disease"
+        android:id="@+id/addsym"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:layout_marginHorizontal="50dp"
+        android:hint="@string/add_medicine"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/addsym"
+        android:id="@+id/addmed"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/amr_submit"/>
+
+
+</RelativeLayout>

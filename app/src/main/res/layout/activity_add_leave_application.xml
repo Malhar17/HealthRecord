@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLeaveApplication">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_leave_details"
+        android:id="@+id/alp_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_doctor_email"
+        android:id="@+id/alp_d_email"
+        android:layout_below="@+id/alp_title"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_faculty_email"
+        android:id="@+id/alp_f_email"
+        android:layout_below="@+id/alp_d_email"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_start_date"
+        android:id="@+id/alp_startdate"
+        android:layout_below="@+id/alp_f_email"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_end_date"
+        android:id="@+id/alp_endate"
+        android:layout_below="@+id/alp_startdate"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alp_submit"
+        android:layout_below="@+id/alp_endate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/submit"
+        android:textSize="30sp"/>
+
+</RelativeLayout>

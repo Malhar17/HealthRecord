@@ -1,19 +1,73 @@
 package com.example.healthrecord;
 
-import android.os.Bundle;
+public class LeaveApplication {
 
-import androidx.fragment.app.Fragment;
+    public static final String collectionName = "LeaveApplication";
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+    private String sID;
+    private String fID;
+    private String dID;
+    private String startDate;
+    private String endDate;
+    private boolean isApprovedByDoc;
+    private boolean isApprovedByFac;
 
-public class LeaveApplication extends Fragment {
+    public LeaveApplication() {
+    }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_leave_application, container, false);
+    public String getsID() {
+        return sID;
+    }
+
+    public String getfID() {
+        return fID;
+    }
+
+    public String getdID() {
+        return dID;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setsID(String sID) {
+        this.sID = sID;
+    }
+
+    public void setfID(String fID) {
+        this.fID = fID;
+    }
+
+    public void setdID(String dID) {
+        this.dID = dID;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
+    }
+
+    public boolean isApprovedByDoc() {
+        return isApprovedByDoc;
+    }
+
+    public void setApprovedByDoc(boolean approvedByDoc) {
+        isApprovedByDoc = approvedByDoc;
+    }
+
+    public boolean isApprovedByFac() {
+        return isApprovedByFac;
+    }
+
+    public void setApprovedByFac(boolean approvedByFac) {
+        isApprovedByFac = approvedByFac;
     }
 }
