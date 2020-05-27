@@ -9,8 +9,8 @@ public class LeaveApplication {
     private String dID;
     private String startDate;
     private String endDate;
-    private boolean isApprovedByDoc;
-    private boolean isApprovedByFac;
+    private int isApprovedByDoc;
+    private int isApprovedByFac;
 
     public LeaveApplication() {
     }
@@ -55,19 +55,19 @@ public class LeaveApplication {
         this.endDate = endDate;
     }
 
-    public boolean isApprovedByDoc() {
+    public int isApprovedByDoc() {
         return isApprovedByDoc;
     }
 
-    public void setApprovedByDoc(boolean approvedByDoc) {
+    public void setApprovedByDoc(int approvedByDoc) {
         isApprovedByDoc = approvedByDoc;
     }
 
-    public boolean isApprovedByFac() {
+    public int isApprovedByFac() {
         return isApprovedByFac;
     }
 
-    public void setApprovedByFac(boolean approvedByFac) {
+    public void setApprovedByFac(int approvedByFac) {
         isApprovedByFac = approvedByFac;
     }
 }

@@ -55,6 +55,8 @@ public class AddLeaveApplication extends AppCompatActivity {
             application.setfID(f_email.getText().toString());
             application.setStartDate(stdate.getText().toString());
             application.setEndDate(enddate.getText().toString());
+            application.setApprovedByDoc(0);
+            application.setApprovedByFac(0);
             db.collection(LeaveApplication.collectionName).add(application).addOnCompleteListener(task -> {
                 if(task.isSuccessful()){
                     Toast.makeText(this, "Leave Application Added to DB", Toast.LENGTH_SHORT).show();

@@ -1,6 +1,5 @@
 package com.example.healthrecord;
 
-import java.util.Date;
 import java.util.List;
 
 public class HealthRecords {

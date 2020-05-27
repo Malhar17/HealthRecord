@@ -12,7 +12,8 @@
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:id="@+id/lt_list"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="50dp"

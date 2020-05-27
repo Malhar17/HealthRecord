@@ -40,4 +40,14 @@
     <string name="enter_faculty_email">Enter Faculty Email</string>
     <string name="enter_start_date">Enter Start Date</string>
     <string name="enter_end_date">Enter end date</string>
+    <string name="disease">Disease</string>
+    <string name="date">date</string>
+    <string name="patient_email">patient email</string>
+    <string name="doctor_email">doctor email</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="student_email">Student Email</string>
+    <string name="faculty_email">Faculty Email</string>
+    <string name="dates">Dates</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
 </resources>
