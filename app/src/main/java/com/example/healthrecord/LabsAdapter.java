@@ -1,6 +1,7 @@
 package com.example.healthrecord;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,7 @@ public class LabsAdapter extends ArrayAdapter<LabTests> {
     private ArrayList<LabTests> list;
     private Context context;
     private static class ViewHolder {
-        TextView disease, date, p_email, d_email, syms, meds;
+        TextView disease, date, p_email, d_email, syms, meds, sym_t, med_t;
     }
 
     public LabsAdapter(ArrayList<LabTests> list, Context context){
@@ -41,8 +42,14 @@ public class LabsAdapter extends ArrayAdapter<LabTests> {
             viewHolder.d_email = convertView.findViewById(R.id.ml_d_email);
             viewHolder.syms = convertView.findViewById(R.id.ml_sym);
             viewHolder.meds = convertView.findViewById(R.id.ml_meds);
-            viewHolder.syms.setVisibility(View.INVISIBLE);
-            viewHolder.meds.setVisibility(View.INVISIBLE);
+            viewHolder.sym_t = convertView.findViewById(R.id.sym_t);
+            viewHolder.med_t = convertView.findViewById(R.id.med_t);
+            viewHolder.syms.setVisibility(View.GONE);
+            viewHolder.meds.setVisibility(View.GONE);
+            viewHolder.sym_t.setVisibility(View.GONE);
+            viewHolder.med_t.setVisibility(View.GONE);
+            viewHolder.disease.setTypeface(null, Typeface.BOLD);
+            viewHolder.date.setTypeface(null, Typeface.BOLD);
             convertView.setTag(viewHolder);
         }
         else viewHolder = (ViewHolder) convertView.getTag();

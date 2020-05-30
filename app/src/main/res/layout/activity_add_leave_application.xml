@@ -13,8 +13,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:textSize="40sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"/>
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimary" />
 
     <EditText
         android:layout_width="match_parent"
@@ -25,7 +25,8 @@
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -36,7 +37,8 @@
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
         android:textSize="25sp"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -46,7 +48,8 @@
         android:layout_below="@+id/alp_f_email"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:importantForAutofill="no"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -56,7 +59,8 @@
         android:layout_below="@+id/alp_startdate"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="10dp"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:importantForAutofill="no"/>
 
     <Button
         android:layout_width="wrap_content"

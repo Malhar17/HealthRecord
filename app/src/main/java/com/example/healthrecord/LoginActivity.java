@@ -36,8 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                     .addOnCompleteListener(task -> {
                         if(task.isSuccessful()){
                             Log.d(TAG, "signin user successfully");
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            updateUI(user);
+                            updateUI();
                         } else {
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(this, "Authentication failed.",
@@ -50,10 +49,11 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        updateUI(FirebaseAuth.getInstance().getCurrentUser());
+        updateUI();
     }
 
-    private void updateUI(FirebaseUser currUser) {
+    private void updateUI() {
+        FirebaseUser currUser = FirebaseAuth.getInstance().getCurrentUser();
         if(currUser != null){
             Intent intent = new Intent(this, AddDetailsActivity.class);
             startActivity(intent);

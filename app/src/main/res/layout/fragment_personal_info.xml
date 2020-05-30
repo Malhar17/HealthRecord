@@ -16,7 +16,7 @@
             android:textSize="30sp"
             android:layout_marginTop="50dp"
             android:id="@+id/pi_title"
-            android:textStyle="bold"
+            android:textStyle="bold|italic"
             android:textColor="@color/colorPrimary"
             android:layout_marginBottom="50dp"/>
 
@@ -26,7 +26,7 @@
             android:text="@string/name"
             android:layout_below="@+id/pi_title"
             android:id="@+id/pi_name"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"/>
 
@@ -35,7 +35,7 @@
             android:layout_height="30dp"
             android:layout_below="@+id/pi_title"
             android:id="@+id/pi_fname"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="10dp"
             android:layout_toEndOf="@+id/pi_name"/>
@@ -46,7 +46,7 @@
             android:text="@string/address"
             android:layout_below="@+id/pi_fname"
             android:id="@+id/pi_address"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp" />
 
@@ -55,7 +55,7 @@
             android:layout_height="30dp"
             android:layout_below="@+id/pi_fname"
             android:id="@+id/pi_address1"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="10dp"
             android:layout_toEndOf="@+id/pi_name"/>
@@ -66,7 +66,7 @@
             android:text="@string/phone_number"
             android:layout_below="@+id/pi_address"
             android:id="@+id/pi_number"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"/>
 
@@ -75,7 +75,7 @@
             android:layout_height="30dp"
             android:layout_below="@+id/pi_address"
             android:id="@+id/pi_pnum"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="10dp"
             android:layout_toEndOf="@+id/pi_number"/>
@@ -86,7 +86,7 @@
             android:text="@string/specialization"
             android:layout_below="@+id/pi_pnum"
             android:id="@+id/pi_spe"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"/>
 
@@ -95,17 +95,17 @@
             android:layout_height="30dp"
             android:layout_below="@+id/pi_pnum"
             android:id="@+id/pi_spec"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="10dp"
-            android:layout_toEndOf="@+id/pi_name"/>
+            android:layout_toEndOf="@+id/pi_spe"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:text="@string/height"
             android:layout_below="@+id/pi_pnum"
             android:id="@+id/pi_height"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"/>
 
@@ -114,7 +114,7 @@
             android:layout_height="30dp"
             android:layout_below="@+id/pi_pnum"
             android:id="@+id/pi_height1"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="10dp"
             android:layout_toEndOf="@+id/pi_name"/>
@@ -125,7 +125,7 @@
             android:text="@string/weight"
             android:layout_below="@+id/pi_height"
             android:id="@+id/pi_weight"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"/>
 
@@ -134,7 +134,7 @@
             android:layout_height="30dp"
             android:layout_below="@+id/pi_height"
             android:id="@+id/pi_weight1"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="10dp"
             android:layout_toEndOf="@+id/pi_name"/>
@@ -142,10 +142,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:text="BMI"
+            android:text="@string/bmi"
             android:layout_below="@+id/pi_weight"
             android:id="@+id/pi_bmi"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"/>
 
@@ -154,7 +154,7 @@
             android:layout_height="30dp"
             android:layout_below="@+id/pi_weight1"
             android:id="@+id/pi_bmi1"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="10dp"
             android:layout_toEndOf="@+id/pi_name"/>

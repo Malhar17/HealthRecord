@@ -11,7 +11,7 @@
         android:text="@string/add_test_details"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         android:layout_marginTop="50dp"
         android:id="@+id/alt_title"
         android:textColor="@color/colorPrimary"/>
@@ -24,7 +24,8 @@
         android:layout_below="@+id/alt_title"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="50dp"
-        android:id="@+id/alt_email"/>
+        android:id="@+id/alt_email"
+        android:importantForAutofill="no"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -34,7 +35,8 @@
         android:layout_below="@+id/alt_email"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="50dp"
-        android:id="@+id/alt_testname"/>
+        android:id="@+id/alt_testname"
+        android:importantForAutofill="no"/>
 
     <Switch
         android:layout_width="match_parent"
