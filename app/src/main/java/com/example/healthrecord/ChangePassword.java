@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.EmailAuthProvider;
@@ -43,14 +44,17 @@ public class ChangePassword extends AppCompatActivity {
                             user.updatePassword(newPass.getText().toString()).addOnCompleteListener(task1 -> {
                                 if(task1.isSuccessful()){
                                     Log.d(TAG, "Password Changed");
+                                    Toast.makeText(this, "Password Changed", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(this, MainActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }
-                                else Log.d(TAG, "Error changing password");
+                                else {Log.d(TAG, "Error changing password");
+                                    Toast.makeText(this, "Error changing password", Toast.LENGTH_SHORT).show();}
                             });
                         }
-                        else Log.d(TAG, "Error in auth");
+                        else {Log.d(TAG, "Error in auth");
+                            oldPass.setError("Wrong old password");}
                     });
         });
     }
