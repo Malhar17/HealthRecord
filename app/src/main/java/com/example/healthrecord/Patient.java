@@ -11,6 +11,8 @@ public class Patient {
     private String address;
     private String mobNumber;
     private boolean isStudent;
+    private double height;
+    private double weight;
 
     public Patient() {
     }
@@ -55,7 +57,36 @@ public class Patient {
         isStudent = student;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
     String getFullName() {
         return firstName + " " + lastName;
+    }
+
+    double getBMI(){
+        double temp = height/100;
+        return weight/(temp*temp);
     }
 }

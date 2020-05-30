@@ -18,7 +18,10 @@
         app:menu="@menu/bottom_navigation_menu"
         android:layout_alignParentBottom="true"
         app:labelVisibilityMode="labeled"
-        app:itemTextColor="@color/colorPrimary"/>
+        app:itemTextColor="@color/colorWhite"
+        android:textAlignment="gravity"
+        app:itemIconSize="0dp"
+        android:background="@color/colorPrimary"/>
 
 
 

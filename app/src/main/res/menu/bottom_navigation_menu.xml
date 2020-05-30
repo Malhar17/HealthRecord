@@ -6,15 +6,14 @@
         android:enabled="true"
         android:title="@string/personal_info"
         app:showAsAction="ifRoom"
-        android:visible="true"/>
+        android:visible="true" />
 
     <item
         android:id="@+id/medRecord"
         android:enabled="true"
         android:title="@string/medical_records"
         app:showAsAction="ifRoom"
-        android:visible="true"
-        />
+        android:visible="true" />
 
     <item
         android:id="@+id/leaveApp"

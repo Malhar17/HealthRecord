@@ -28,25 +28,30 @@ public class ChangePassword extends AppCompatActivity {
 
         oldPass = findViewById(R.id.oldPass);
         newPass = findViewById(R.id.newPass);
-        submit = findViewById(R.id.submit);
+        submit = findViewById(R.id.cp_submit);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         assert user != null;
-        AuthCredential credential = EmailAuthProvider.getCredential(Objects.requireNonNull(user.getEmail()), oldPass.getText().toString());
-        user.reauthenticate(credential)
-                .addOnCompleteListener(task -> {
-                   if (task.isSuccessful()){
-                       user.updatePassword(newPass.getText().toString()).addOnCompleteListener(task1 -> {
-                           if(task1.isSuccessful()){
-                               Log.d(TAG, "Password Changed");
-                               Intent intent = new Intent(this, MainActivity.class);
-                               startActivity(intent);
-                               finish();
-                           }
-                           else Log.d(TAG, "Error changing password");
-                       });
-                   }
-                   else Log.d(TAG, "Error in auth");
-                });
+        submit.setOnClickListener(v -> {
+            if(newPass.getText().toString().length() <6){
+                newPass.setError("Password should be atleast 6 characters long");
+                return;}
+            AuthCredential credential = EmailAuthProvider.getCredential(Objects.requireNonNull(user.getEmail()), oldPass.getText().toString());
+            user.reauthenticate(credential)
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()){
+                            user.updatePassword(newPass.getText().toString()).addOnCompleteListener(task1 -> {
+                                if(task1.isSuccessful()){
+                                    Log.d(TAG, "Password Changed");
+                                    Intent intent = new Intent(this, MainActivity.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                                else Log.d(TAG, "Error changing password");
+                            });
+                        }
+                        else Log.d(TAG, "Error in auth");
+                    });
+        });
     }
 }

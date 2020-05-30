@@ -12,7 +12,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -62,11 +62,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/submit"
-        android:textSize="25sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
-        android:id="@+id/amr_submit"/>
+        android:id="@+id/amr_submit"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"/>
 
 
 </RelativeLayout>
